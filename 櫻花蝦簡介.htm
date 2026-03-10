@@ -23,9 +23,11 @@
 	        .photo {content: url("https://cdn.discordapp.com/attachments/1030805146491433051/1477269357859045476/IMG_20251223_131538_538.jpg?ex=69b0034d&is=69aeb1cd&hm=359ccea94aa0dca6574e93ff89ffe2fc10dcc620a2ab76b82777efec295fbb84&")}
 	        
 	        .main {border-collapse: collapse; 
-	                 border: 4px solid black; 
-	                 margin-left: auto; 
-	                 margin-right: auto;}
+	               margin-left: auto; 
+	               margin-right: auto;}
+	       
+	        .main td {border: 4px solid black;
+	                  border-bottom: 2px solid black;}
 	        
 	        .pTABLE {border-collapse: collapse;
 	                 margin-left: auto; 
@@ -47,32 +49,67 @@
 	        .name_table h1 {text-align: center}
 	        
 	        .name_table h2 {text-align: center}
+	        
+	        .web1 {display: block;
+	               margin: 0 auto;}
+	       
+	        .profile, .links, .webs {margin-bottom: 30px;
+	                                 padding: 20px;
+                                     border: 2px solid pink;
+                                     border-radius: 10px;
+                                     background-color: pink;}
+            
 	    </style>
     </head>
+    
     <body>
-        <table class="main" width="60%" border="1">
-		    <tr>
-			    <td>
-				    <img class="photo" width="100%"></img>
-			    </td>
+        <div class="profile">
+            <table class="main" width="60%">
+		        <tr>
+			        <td>
+				        <img class="photo" width="100%"></img>
+			        </td>
 
-			    <td class="name_table">
-				    <h1>赤櫻櫻</h1>
-				    <h2>sakura_0405</h2>
-			    </td>
-		    </tr>
-        </table>
-        <table class="pTABLE" width="50%">
-		    <tr>
-			    <td class="discord_link">
-				    <strong class="DC1">Discord</strong> : <a href="https://discord.gg/WwGGnV5D3s" target="_blank" rel="noopener noreferrer"><strong class="P1">豬玀G公園 (server)</strong></a><br>
-			    </td>
-			</tr>
-			<tr>
-			    <td class="twich_link">
-			        <strong class="TC1">Twitch</strong> : <a href="https://www.twitch.tv/sakura_0405" target="_blank" rel="noopener noreferrer"><strong class="P2">sakura_0405</strong></a><br>
-			    </td>
-			</tr>
-	    </table>
+			        <td class="name_table">
+				        <h1>赤櫻櫻</h1>
+				        <h2>sakura_0405</h2>
+			        </td>
+		        </tr>
+            </table>
+        </div>
+        
+        <div class="links">    
+            <table class="pTABLE" width="50%">
+		        <tr>
+			        <td class="discord_link">
+				        <strong class="DC1">Discord</strong> : <a href="https://discord.gg/WwGGnV5D3s" target="_blank" rel="noopener noreferrer"><strong class="P1">豬玀G公園 (server)</strong></a><br>
+			        </td>
+			    </tr>
+			    <tr>
+			        <td class="twich_link">
+			            <strong class="TC1">Twitch</strong> : <a href="https://www.twitch.tv/sakura_0405" target="_blank" rel="noopener noreferrer"><strong class="P2">sakura_0405</strong></a><br>
+			        </td>
+			    </tr>
+	        </table>
+	    </div>
+	    
+	    <div class="webs">
+	        <iframe 
+	            class="web1"
+	            data-testid="embed-iframe"
+	            style="border-radius:12px" 
+	            src="https://open.spotify.com/embed/playlist/5QHGQSkfoZKW81y2AydMNy?utm_source=generator"
+	            width="500px"
+	            height="500px"
+	            frameBorder="0"
+	            allowfullscreen=""
+	            allow="autoplay;
+	            clipboard-write;
+	            encrypted-media;
+	            fullscreen;
+	            picture-in-picture"
+	            loading="lazy">
+	        </iframe>     
+        </div>
     </body>
 </html>
