@@ -20,7 +20,6 @@
 		    
 	    </style>
 	    <style>
-	        .photo {content: url("https://cdn.discordapp.com/attachments/1030805146491433051/1477269357859045476/IMG_20251223_131538_538.jpg?ex=69b0034d&is=69aeb1cd&hm=359ccea94aa0dca6574e93ff89ffe2fc10dcc620a2ab76b82777efec295fbb84&")}
 	        
 	        .main {border-collapse: collapse; 
 	               margin-left: auto; 
@@ -42,22 +41,28 @@
 	           color: blue;
 	           text-underline-offset: 4px;}
 	        
-	        .twich_link {text-align: center}
-	        
-	        .discord_link {text-align: center}
-	            
-	        .name_table h1 {text-align: center}
-	        
-	        .name_table h2 {text-align: center}
+	        .name_table h1, .name_table h2, .twich_link, .discord_link {text-align: center}
 	        
 	        .web1 {display: block;
+	               margin: 0 auto;
+	               width: 80vw;
+	               height: 40vw;}
+	               
+	        .GFsPhoto {
 	               margin: 0 auto;}
 	       
-	        .profile, .links, .webs {margin-bottom: 30px;
-	                                 padding: 20px;
-                                     border: 2px solid pink;
-                                     border-radius: 10px;
-                                     background-color: pink;}
+	        .profile, .links, .webs, .GFs {
+	                                margin-bottom: 30px;
+	                                padding: 20px;
+                                    border: 2px solid pink;
+                                    border-radius: 10px;
+                                    background-color: pink;}
+            
+            .GP1, .GP2 {
+                    width: 20vw;
+                    height: 40vw;
+                    object-fit: cover;
+            }
             
 	    </style>
     </head>
@@ -67,7 +72,9 @@
             <table class="main" width="60%">
 		        <tr>
 			        <td>
-				        <img class="photo" width="100%"></img>
+				        <img 
+				            src="MyPic.jpg" 
+				            width="100%"/>
 			        </td>
 
 			        <td class="name_table">
@@ -99,8 +106,6 @@
 	            data-testid="embed-iframe"
 	            style="border-radius:12px" 
 	            src="https://open.spotify.com/embed/playlist/5QHGQSkfoZKW81y2AydMNy?utm_source=generator"
-	            width="500px"
-	            height="500px"
 	            frameBorder="0"
 	            allowfullscreen=""
 	            allow="autoplay;
@@ -111,5 +116,23 @@
 	            loading="lazy">
 	        </iframe>     
         </div>
+        
+        <div class="GFs">
+            <table class="GFsPhoto" width="50%">
+                <tr>
+                    <td>
+                        <img
+                            class="GP1"
+                            src="girl.jpg"/>
+                    </td>
+
+                    <td>
+                        <img
+                            class="GP2"
+                            src="girl2.jpg"/>
+                    </td>
+                </tr>        
+            </table>
+        </div>    
     </body>
 </html>
