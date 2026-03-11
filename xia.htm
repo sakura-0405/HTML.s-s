@@ -1,0 +1,188 @@
+<html lang="en">
+    <head>
+	    <meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <title>櫻花鉤吻蝦 簡介</title>
+	    <style type="text/css"> 
+	    
+	        /*字體修改*/
+		    body {font-family:"標楷體";}
+		    
+		    .MyName {color:#ff00ab; font-size:5.5vw;}
+		    
+		    .MyID {color:#ff00fc; font-size:5vw;}
+		    
+		    .DC1 {color:#7289da; font-size:2.5vw;}
+		    
+		    .TC1 {color:#9146ff; font-size:2.5vw;}
+		    
+		    .P1 {color:#000000; font-size:2.5vw;}
+		    
+		    .P2 {color:#000000; font-size:2.5vw;}
+		    
+		    .title1, .title2, .title3, .title4 {color: #000000; font-size:6vw;}
+		    
+	    </style>
+	    <style>
+	        /*title置中*/
+	        .title1, .title2, .title3, .title4{
+	            text-align: center
+	            }
+	        
+	        /*個人資料置中*/
+	        .main {
+	            border-collapse: collapse; 
+                margin-left: auto; 
+                margin-right: auto;
+	            }
+
+            /*名稱置中*/
+            .name_td h1,.name_td h2 {
+                text-align: center
+                }       
+
+            /*主要資料邊框*/
+            .mp_td,.name_td  {
+                border-bottom: 4px solid black;
+                border-top: 4px solid black;
+                }
+
+            .mp_td {
+                border-right: 2px solid black;
+                border-left: 4px solid black;
+                }
+
+            .name_td {
+                border-right: 4px solid black;
+                }
+            
+            /*links置中*/
+             .pTABLE {
+                border-collapse: collapse;
+                margin-left: auto; 
+                margin-right: auto;
+                }
+            
+
+            /*links邊框*/
+            .discord_link, .twitch_link {
+                border-left: 4px solid black;
+                border-right: 4px solid black;
+                }
+            
+            .discord_link {
+                border-top: 4px solid black;
+                border-bottom: 2px solid black;
+                }
+            
+            .twitch_link {
+                border-bottom: 4px solid black;
+                }
+            
+            /*歌單置中、比例*/
+            .web1 {
+                display: block;
+                margin: 0 auto;
+                width: 50vw;
+                height: 40vw;
+                }
+            
+            /*小寶照片置中*/
+            .GFsPhoto {
+                margin: 0 auto;
+                }
+                
+            /*小寶照片比例*/    
+            .GP1, .GP2 {
+                width: 30vw;
+                height: 50vw;
+                object-fit: cover;}
+            
+            /*背景卡片*/
+            .profile, .links, .webs, .GFs {
+                margin-bottom: 30px;
+                padding: 20px;
+                border: 2px solid pink;
+                border-radius: 10px;
+                background-color: pink;
+                }
+            
+	    </style>
+    </head>
+    
+    <body>
+        
+        <h1 class="title1">關於我</h1>
+        <div class="profile">
+            <table class="main" width="60%">
+		        <tr>
+			        <td class="mp_td">
+				        <img 
+				            src="MyPic.jpg" 
+				            width="100%"/>
+			        </td>
+
+			        <td class="name_td">
+				        <h1 class="MyName">赤櫻櫻</h1>
+				        <h2 class="MyID">sakura_0405</h2>
+			        </td>
+		        </tr>
+            </table>
+        </div>
+        
+        <h1 class="title2">連結</h1>
+        
+        <div class="links">    
+            <table class="pTABLE" width="50%">
+		        <tr>
+			        <td class="discord_link">
+				        <strong class="DC1">Discord</strong> : <a href="https://discord.gg/WwGGnV5D3s" target="_blank" rel="noopener noreferrer"><strong class="P1">豬玀G公園 (server)</strong></a><br>
+			        </td>
+			    </tr>
+			    <tr>
+			        <td class="twitch_link">
+			            <strong class="TC1">Twitch</strong> : <a href="https://www.twitch.tv/sakura_0405" target="_blank" rel="noopener noreferrer"><strong class="P2">sakura_0405</strong></a><br>
+			        </td>
+			    </tr>
+	        </table>
+	    </div>
+	    
+	    <h1 class="title3">歌單</h1>
+	    
+	    <div class="webs">
+	        <iframe 
+	            class="web1"
+	            data-testid="embed-iframe"
+	            style="border-radius:12px" 
+	            src="https://open.spotify.com/embed/playlist/5QHGQSkfoZKW81y2AydMNy?utm_source=generator"
+	            frameBorder="0"
+	            allowfullscreen=""
+	            allow="autoplay;
+	            clipboard-write;
+	            encrypted-media;
+	            fullscreen;
+	            picture-in-picture"
+	            loading="lazy">
+	        </iframe>     
+        </div>
+
+        <h1 class="title4">我家寶貝</h1>
+
+        <div class="GFs">
+            <table class="GFsPhoto" width="50%">
+                <tr>
+                    <td>
+                        <img
+                            class="GP1"
+                            src="girl.jpg"/>
+                    </td>
+                    <td>
+                        <img
+                            class="GP2"
+                            src="girl2.jpg"/>
+                    </td>
+                </tr>        
+            </table>
+        </div>    
+    </body>
+</html>
